@@ -66,17 +66,15 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M7</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.1.0</version> <!-- or whatever version you're using -->
 				<configuration>
-					<forkCount>1</forkCount>
-					<reuseForks>false</reuseForks>
-					<argLine>-Xmx1024m</argLine> <!-- Increase as needed -->
+					<mainClass>com.example.employee.EmployeeApplication</mainClass> <!-- your actual main class -->
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
+
 
 </project>

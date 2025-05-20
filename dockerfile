@@ -6,3 +6,4 @@ COPY target/*.jar Employee-0.0.1-SNAPSHOT.jar
 
 # Run the jar file
 ENTRYPOINT ["java", "-jar", "Employee-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080
